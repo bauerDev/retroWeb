@@ -1,0 +1,14 @@
+<header>
+    <h1>RetroWeb</h1>
+
+    <nav>
+        <ul>
+          <li><a href="/">Atari</a></li>
+          <% categorias.forEach(cat => { %>
+            <li><a href="/categoria/<%= cat %>"><%= cat %></a></li>
+          <% }) %>
+        </ul>
+      </nav>
+      
+
+</header>

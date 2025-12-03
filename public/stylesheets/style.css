@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1616;
+  color: rgba(255, 255, 255, 0.833);
+  padding: 10px 0;
+
+  nav ul {
+  display: flex;
+  flex-direction: row;   /* pone los <li> en línea */
+  gap: 20px;             /* espacio entre elementos */
+  list-style: none;      /* quita los puntos */
+  padding: 0;
+  margin: 0;
+  }
+  nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  }
+
+
+}
+
+main {
+  max-width: calc(100% - 600px); /* 300px a cada lado */
+  margin: 0 auto; /* centra horizontalmente */
+  padding: 20px; /* opcional, espacio interno */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  position: relative; /* necesario para posicionar el título dentro */
+  display: block;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color:white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Título superpuesto */
+.titulo-tarjeta {
+  position: absolute;
+  bottom: 0; /* se pone abajo sobre la imagen */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contenido {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1a1616;
+  color: rgba(255, 255, 255, 0.833);
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+        <%- include('partials/header') %>
+    
+    <main>
+        <img src="<%= post.image %>" alt="<%= post.title %>" style="width:100%; max-width:500px;">
+        <h2><%= post.title %></h2>
+        <p><%= post.intro %></p>
+        <a href="#"><%= post.category %></a>
+        <div class="contenido">
+            <%- post.content %>  <!-- ojo: <%- %> permite interpretar HTML dentro del content -->
+        </div>
+    </main>
+    
+    <%- include('partials/footer') %>
+</body>
+</html>
